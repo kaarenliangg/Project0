@@ -56,4 +56,5 @@ body {
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: center;
+    transition-duration: 1s;
 }
