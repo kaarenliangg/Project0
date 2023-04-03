@@ -26,6 +26,7 @@ body {
     text-align: center;
     height: 100px;
     width: 100px;
+    padding: 10px;
 } 
 
 .turn {
@@ -34,4 +35,25 @@ body {
     margin-top: 10px;
     width: 00px;
     height: 300px;
+}
+
+.x {
+    background-image: url("Images/icons8-close-144.png");
+    margin: 0 auto;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 1s;
+}
+
+.x:hover {
+    background-image: url("Images/icons8-close-144.png");
+}
+
+.o {
+    background-image: url("Images/icons8-hollow-red-circle-144.png");
+    margin: 0 auto;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
