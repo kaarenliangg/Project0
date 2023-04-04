@@ -122,7 +122,7 @@ $(document).ready(function () {
 
         // draw
         } if (numPlays === 9 && gameFinished === false) {
-            alert('Draw');
+            $('.winnerMsg').text('Game is a draw');
             gameFinished = true;
         }         
     };
