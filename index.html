@@ -10,28 +10,49 @@
 
 </head>
 <body>
+    
     <div class="head">
         <h1>Tic Tac Toe</h1>
     </div>
-    <div class="container">
-        <button class="grid-item" data-index="0"></button>
-        <button class="grid-item" data-index="1"></button>
-        <button class="grid-item" data-index="2"></button>
-        <button class="grid-item" data-index="3"></button>
-        <button class="grid-item" data-index="4"></button>
-        <button class="grid-item" data-index="5"></button>
-        <button class="grid-item" data-index="6"></button>
-        <button class="grid-item" data-index="7"></button>
-        <button class="grid-item" data-index="8"></button>
+
+    <div class="score">
+        <h2 id="xScore">X: 0</h2>
+        <!-- <div class="player">
+            <h3>X:</h3>
+            <h3 class="xScore">0</h3> 
+        </div> -->
+        <h2 id="oScore">O: 0</h2>
     </div>
+
+    <div class="game-board">
+        <button class="grid-item" id="0"></button>
+        <button class="grid-item" id="1"></button>
+        <button class="grid-item" id="2"></button>
+        <button class="grid-item" id="3"></button>
+        <button class="grid-item" id="4"></button>
+        <button class="grid-item" id="5"></button>
+        <button class="grid-item" id="6"></button>
+        <button class="grid-item" id="7"></button>
+        <button class="grid-item" id="8"></button>
+    </div>
+
     <div class="turn">
-        <div class="whichTurn active">X's turn</div>
-        <div class="whichTurn">O's turn</div>
+        <div class="xTurn X">X's turn</div>
+        <div class="oTurn">O's turn</div>
     </div>
+
     <div class="winner">
-        <h3 class="winnerMsg"></h3>
+        <h3 class="winnerMsg">	
+           </h3>
+    </div>
+
+    <div class="rectangle">
+    </div>
+
+    <div class="space"></div>
+
+    <div class="button">
+        <button class="reset" id="inactive">Reset</button>
     </div>
 </body>
 </html>
-
-<!--  &#x1F389; Winner is -->

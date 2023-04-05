@@ -16,6 +16,10 @@ body {
 
 }
 
+.grid-item {
+    font-family: 'Poppins', sans-serif;;
+}
+
 .head {
     margin: 0 auto;
     margin-top: 50px;
@@ -23,15 +27,28 @@ body {
 
 }
 
-h1, h3 {
+.score {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    width: 300px;
+}
+
+h2 {
+    border: 1px solid red;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Poppins', sans-serif;;
 }
 
-.container {
+.game-board {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 300px;
@@ -56,13 +73,7 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     width: 300px;
-    height: 80px;
-}
-
-
-h3 {
-    margin: 0 auto;
-    margin-top: 20px;
+    height: 70px;
 }
 
 .x {
@@ -87,7 +98,7 @@ h3 {
     transition-duration: 1s;
 }
 
-.whichTurn {
+.xTurn {
     height: 20px;
     width: 115px;
     border: 2px solid white;
@@ -101,19 +112,93 @@ h3 {
     padding: 10px;
 }
 
-.active {
+.oTurn {
+    height: 20px;
+    width: 115px;
+    border: 2px solid white;
+    background-color: #ffffff40;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.X, .O {
     border: 2px solid #3b0ac4;
     background-color: #544ef8;
-    box-shadow: 3px 3px 4px #4017c6;
+    transition-duration: 0.8s;
 }
 
 .winner {
     display: flex;
-    background: white;
     margin: 0 auto;
-    margin-top: 10px;
     width: 300px;
-    height: 80px;
-    border: solid 1px red;
+    height: 50px;  
+}
+#won {
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    background-color: #ffffff80;
+    transition: 1s;
+}
+
+h3 {
+    color: #544ef8;
+    justify-content: center;
+    line-height: 2.8;  
+    transition: 1s;
+}
+
+#activeRectangle {
+    margin: 0 auto;
+    margin-top: -22px;
+    height: 10px;
+    width: 209px;
+    display: flex;
+    background-color: rgb(255, 221, 0);
+    transition: 1s;
 }
  
+
+.button {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+
+.space {
+    height: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.reset {
+    position: inline-block;
+    text-align: center;
+    font-family: 'Poppins semibold', helvetica, sans-serif;
+    margin: 0 auto;
+    margin-left: 40%;
+    padding: 3px 13px 3px 13px;
+    border-radius: 0.4em;
+    background-color: #f3f7ff;
+    border: 1px solid #043aa6;
+    box-shadow: 3px 3px 4px #150935;
+}
+
+.reset:hover {
+    color: red;
+}
+
+#inactive {
+    color: rgb(246, 246, 246);
+    background-color: rgb(172, 172, 172);
+    border: rgb(121, 121, 121);
+    box-shadow: 1px 1px 1px rgb(121, 121, 121);
+}
