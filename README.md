@@ -4,48 +4,13 @@ A web-based Tic Tac Toe game.
 
 ## Project Description
 
+Build a Tic Tac Toe web-based game from scratch using HTML, CSS, JS / jQuery. The game is played on a browser by clicking on the board. 
+
+### Challenges
+When you are minimising the window's width, the background image would crop with image ratio, which results in a white background on the bottom of the page.
+
+Game is not tested on mobile, therefore, is best used on computer with full sized browser.
 
 
-Also Heading
-=============
-
-## Subheading
-Also Subheading
-----------------
-
-### Subsubheading
-
-## Emphasis
-
-You can make words *italic* or **bold**
-
-This is for very ***special*** text.
-
-Underscores will also __work__.
-
-## Lists
-* A
-* B
-* C
-
-1. Number
-1. Number
-1. Number
-
-## Links
-This is [a link to the game](http://www.).
-
-## Images
-![alt text](http://www.image).
-
-## Code formatting
-
-The jQuery library uses the '$' variable. This is the `monospace` font. Have you tried `console.log`?
-
-Here is an example of a function in JS:
-
-```
-const thing = function() {
-    console.log('this is a function');
-}
-```
+## How to use the project
+This is [a link to the game](https://kaarenliangg.github.io/Project0/).

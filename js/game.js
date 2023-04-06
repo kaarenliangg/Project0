@@ -10,6 +10,7 @@
 // 6. Draw? Have number of plays that ++ each round and once it reaches 9, it is automatically a draw as there are no spots left
 // 7. must always check for winners before continuing the game
 // --------------------------------------------------------------------------------------------------
+import collection from 'easter-egg-collection'
 
 $(document).ready(function () { 
 
