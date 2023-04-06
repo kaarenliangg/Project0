@@ -290,4 +290,3 @@ $(document).ready(function () {
     $('.reset').on('click', resetGame);
 });
 
-// import collection from 'easter-egg-collection'
