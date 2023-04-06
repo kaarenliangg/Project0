@@ -1,10 +1,10 @@
 # Project 0 - Tic Tac Toe 
 
-- An alternative to HTML (not a substitute)
+A web-based Tic Tac Toe game.
 
-- human readable
+## Project Description
 
-# Heading
+
 
 Also Heading
 =============
