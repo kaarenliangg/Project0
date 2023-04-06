@@ -215,9 +215,9 @@ $(document).ready(function () {
         // Draw
         } if (numPlays === 9 && gameFinished === false) {
             $('h3.winnerMsg').text('Draw'); 
-                $('h3.winnerMsg').attr('id', 'won');
-                $('.reset').removeAttr('id');
-                gameFinished = true;
+            $('h3.winnerMsg').attr('id', 'won');
+            $('.reset').removeAttr('id');
+            gameFinished = true;
         }         
     };
 
@@ -251,6 +251,7 @@ $(document).ready(function () {
                 currentPlayer = 'O';
                 $('.xTurn').removeClass('X');
                 $('.oTurn').addClass('O');
+
             } else {
                 // switches back to X
                 currentPlayer = 'X';
@@ -266,24 +267,26 @@ $(document).ready(function () {
     // ---------------------------------------------
 
     const resetGame = function() {
+
         if ($(this).attr('id') === 'inactive') {
             return;
+
         } else {
-        $('h3.winnerMsg').removeAttr('id');
-        $('div.rectangle').removeAttr('id');
-        $('h3.winnerMsg').text('');
-        $('.reset').attr('id', 'inactive');
-        $('#0').text('');
-        $('#1').text('');
-        $('#2').text('');
-        $('#3').text('');
-        $('#4').text('');
-        $('#5').text('');
-        $('#6').text('');
-        $('#7').text('');
-        $('#8').text('');
-        gameFinished = false;
-        numPlays = 0;
+            $('h3.winnerMsg').removeAttr('id');
+            $('div.rectangle').removeAttr('id');
+            $('h3.winnerMsg').text('');
+            $('.reset').attr('id', 'inactive');
+            $('#0').text('');
+            $('#1').text('');
+            $('#2').text('');
+            $('#3').text('');
+            $('#4').text('');
+            $('#5').text('');
+            $('#6').text('');
+            $('#7').text('');
+            $('#8').text('');
+            gameFinished = false;
+            numPlays = 0;
         } 
     }       
     $('.reset').on('click', resetGame);
