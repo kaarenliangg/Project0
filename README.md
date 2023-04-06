@@ -14,3 +14,12 @@ Game is not tested on mobile, therefore, is best used on computer with full size
 
 ## How to use the project
 This is [a link to the game](https://kaarenliangg.github.io/Project0/).
+
+## Desktop
+
+![Tic Tac Toe Desktop](/css/Images/desktop.png)
+
+## Mobile
+
+![Tic Tac Toe Mobile 1](/css/Images/Mobile_1.jpg)
+![Tic Tac Toe Mobile 2](/css/Images/Mobile_2.png)
