@@ -9,7 +9,7 @@ Build a Tic Tac Toe web-based game from scratch using HTML, CSS, JS / jQuery. Th
 ### Challenges
 When you are minimising the window's width, the background image would crop with image ratio, which results in a white background on the bottom of the page.
 
-Game is not tested on mobile, therefore, is best used on computer with full sized browser.
+Game is displayed properly on mobile. The transitions are quite slow. User experience is best on desktop.
 
 
 ## How to use the project
