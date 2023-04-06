@@ -11,8 +11,6 @@
 // 7. must always check for winners before continuing the game
 // --------------------------------------------------------------------------------------------------
 
-
-
 $(document).ready(function () { 
 
     // allows to check if game is finished and player will not be able to proceed with clicking
@@ -43,111 +41,54 @@ $(document).ready(function () {
     
 
     // ---------------------------------------------
-    // UPDATE SCORE - X
-    // ---------------------------------------------
-  
-
-    const updateScoreX = function() {
-        let currentScore = Number($('.xScore').text());
-        newScore = currentScore + 1;
-        $('.xScore').html(newScore) 
-    };
-
-    // ---------------------------------------------
-    // WINNING OUTPUT - X
-    // ---------------------------------------------
-    
-    const winOutputX = function () {
-        $('h3.winnerMsg').text('\u{1F389}  Winner is Player X'); 
-            $('h3.winnerMsg').attr('id', 'won');
-            $('div.rectangle').attr('id', 'activeRectangle');
-            $('.reset').removeAttr('id');
-    }
-
-    // ---------------------------------------------
-    // WINNING OUTPUT - O
-    // ---------------------------------------------
-    
-    const winOutputO = function () {
-        $('h3.winnerMsg').text('\u{1F389}  Winner is Player O'); 
-            $('h3.winnerMsg').attr('id', 'won');
-            $('div.rectangle').attr('id', 'activeRectangle');
-            $('.reset').removeAttr('id');
-    }
-
-    // ---------------------------------------------
-    // UPDATE SCORE - O
-    // ---------------------------------------------
-  
-
-    const updateScoreO = function() {
-        let currentScore = Number($('.oScore').text());
-        newScore = currentScore + 1;
-        $('.oScore').html(newScore) 
-    };
-
-    // ---------------------------------------------
     // Checks for wins for 'X'
     // ---------------------------------------------
     const checkWinner = function() {
 
-        // Horizontal
+        // Horizontally 
 
         if ($('#0').text() == 'X' && $('#1').text() == 'X' && $('#2').text() == 'X') {
             gameFinished = true;
-            winOutputX();
-            updateScoreX();
-
+            $('.winnerMsg').text('&#x1F389; Winner is X'); 
             
         
             } else if ($('#3').text() == 'X' && $('#4').text() == 'X' && $('#5').text() == 'X') {
                 gameFinished = true;
-                winOutputX();
-                updateScoreX();
+                $('.winnerMsg').text('&#x1F389; Winner is X'); 
                 
 
             } else if ($('#6').text() == 'X' && $('#7').text() == 'X' && $('#8').text() == 'X') {
                 gameFinished = true;
-                winOutputX();
-                updateScoreX();
+                $('.winnerMsg').text('&#x1F389; Winner is X'); 
                 
             
-            // Vertical
+            // Vertically
             
             } else if ($('#0').text() == 'X' && $('#3').text() == 'X' && $('#6').text() == 'X') {
                 gameFinished = true;
-                winOutputX();
-                updateScoreX();
-                
+                $('.winnerMsg').text('&#x1F389; Winner is X'); 
                 
 
             } else if ($('#1').text() == 'X' && $('#4').text() == 'X' && $('#7').text() == 'X') {
                 gameFinished = true;
-                winOutputX();
-                updateScoreX();
-                
+                $('.winnerMsg').text('&#x1F389; Winner is X'); 
                 
             
             } else if ($('#2').text() == 'X' && $('#5').text() == 'X' && $('#8').text() == 'X') {
                 gameFinished = true;
-                winOutputX();
-                updateScoreX();
-                
+                $('.winnerMsg').text('&#x1F389; Winner is X'); 
                 
             
-            // Diagonal
+            // diagonal
 
             } else if ($('#0').text() == 'X' && $('#4').text() == 'X' && $('#8').text() == 'X') {
                 gameFinished = true;
-                winOutputX();
-                updateScoreX();
-                
+                $('.winnerMsg').text('&#x1F389; Winner is X'); 
                 
 
             } else if ($('#2').text() == 'X' && $('#4').text() == 'X' && $('#6').text() == 'X') {
                 gameFinished = true;
-                winOutputX();
-                updateScoreX();
+                $('.winnerMsg').text('&#x1F389; Winner is X'); 
                 
 
         
@@ -157,68 +98,58 @@ $(document).ready(function () {
      // Checks for wins for 'O'
      // ---------------------------------------------
         
-        // Horizontal
+        // Horizontally 
 
             } else if ($('#0').text() == 'O' && $('#1').text() == 'O' && $('#2').text() == 'O') {
                 gameFinished = true;
-                winOutputO();
-                updateScoreO();
+                $('.winnerMsg').text('&#x1F389; Winner is O'); 
                 
                 
 
             } else if ($('#3').text() == 'O' && $('#4').text() == 'O' && $('#5').text() == 'O') {
                 gameFinished = true;
-                winOutputO();
-                updateScoreO();
+                $('.winnerMsg').text('&#x1F389; Winner is O');
                 
 
             } else if ($('#6').text() == 'O' && $('#7').text() == 'O' && $('#8').text() == 'O') {
                 gameFinished = true;
-                winOutputO();
-                updateScoreO();
+                $('.winnerMsg').text('&#x1F389; Winner is O');
                 
             
-            // Vertical
+            // Vertically
             
             } else if ($('#0').text() == 'O' && $('#3').text() == 'O' && $('#6').text() == 'O') {
                 gameFinished = true;
-                winOutputO();
-                updateScoreO();
+                $('.winnerMsg').text('&#x1F389; Winner is O');
                 
 
             } else if ($('#1').text() == 'O' && $('#4').text() == 'O' && $('#7').text() == 'O') {
                 gameFinished = true;
-                winOutputO();
-                updateScoreO();
+                $('.winnerMsg').text('&#x1F389; Winner is O');
                 
             
             } else if ($('#2').text() == 'O' && $('#5').text() == 'O' && $('#8').text() == 'O') {
                 gameFinished = true;
-                winOutputO();
-                updateScoreO();
+                $('.winnerMsg').text('&#x1F389; Winner is O');
                 
             
 
-            // Diagonal
+            // diagonal
 
             } else if ($('#0').text() == 'O' && $('#4').text() == 'O' && $('#8').text() == 'O') {
                 gameFinished = true;
-                winOutputO();
-                updateScoreO();
+                $('.winnerMsg').text('&#x1F389; Winner is O');
                 
 
             } else if ($('#2').text() == 'O' && $('#4').text() == 'O' && $('#6').text() == 'O') {
                 gameFinished = true;
-                winOutputO();
-                updateScoreO();
+                $('.winnerMsg').text('&#x1F389; Winner is O');
                 
 
-        // Draw
+        // draw
         } if (numPlays === 9 && gameFinished === false) {
-            $('h3.winnerMsg').text('Draw'); 
-                $('h3.winnerMsg').attr('id', 'won');
-                $('.reset').removeAttr('id');
-                gameFinished = true;
+            $('.winnerMsg').text('Game is a draw');
+            gameFinished = true;
         }         
     };
 
@@ -237,14 +168,18 @@ $(document).ready(function () {
         // 2. Ensure game is not finished and able for players to proceed. If finished, the game would not continue and players will not be able to click on the board
         if (gameFinished === false && $(this).text() === '') {
 
+            // 3. start number of plays and ++ (add 1) each turn - able to determine draw
+            numPlays++;
+
             // update the grid with text of currentPlayer. Using 'this' to indicate only 1 of the box, if 'grid-item' is used then it would select all the items.
             $(this).text(currentPlayer);
 
-            //  ++ (add 1) each turn - able to determine draw
-            numPlays++;
-
             // check if there is a winner after making their move
-            checkWinner();
+            if (checkWinner() === true) {
+                $('.winnerMsg').text(`Winner is ${ currentPlayer }`);
+                gameFinished = true;
+            } 
+
 
             // after updating the board, if currentPlayer is 'X'. It will switch to 'O' using if statements. Then constantly switches between players as later on it defaults to 'X' again and restarts. 
             if (currentPlayer === 'X') {
@@ -261,33 +196,4 @@ $(document).ready(function () {
     
         }
     });
-
-    // ---------------------------------------------
-    // RESET THE GAME   
-    // ---------------------------------------------
-
-    const resetGame = function() {
-        if ($(this).attr('id') === 'inactive') {
-            return;
-        } else {
-        $('h3.winnerMsg').removeAttr('id');
-        $('div.rectangle').removeAttr('id');
-        $('h3.winnerMsg').text('');
-        $('.reset').attr('id', 'inactive');
-        $('#0').text('');
-        $('#1').text('');
-        $('#2').text('');
-        $('#3').text('');
-        $('#4').text('');
-        $('#5').text('');
-        $('#6').text('');
-        $('#7').text('');
-        $('#8').text('');
-        gameFinished = false;
-        numPlays = 0;
-        } 
-    }       
-    $('.reset').on('click', resetGame);
 });
-
-// import collection from 'easter-egg-collection'
