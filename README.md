@@ -20,7 +20,7 @@ When you are minimising the window's width, the background image would crop with
 Game is displayed properly on mobile. The transitions are quite slow. User experience is best on desktop.
 
 
-## How to use the project
+## Play now!
 This is [a link to the game](https://kaarenliangg.github.io/Project0/).
 
 
